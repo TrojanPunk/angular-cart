@@ -1,0 +1,23 @@
+.class-group-item {
+    padding: 1rem 0rem;
+}
+
+.price-quantity {
+    gap: 10px;
+}
+
+.control {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0px;
+    background-color: black;
+    border: none;
+}
+
+.control:hover{
+    background: rgb(60, 60, 60);
+}
+
+.badge {
+    border: none;
+}

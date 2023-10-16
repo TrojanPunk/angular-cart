@@ -1,0 +1,19 @@
+.products-container {
+    gap: 40px;
+}
+
+.total-amount {
+    font-size: 16px;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid black;
+}
+
+.amount {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.column-container {
+    margin: 1rem 0rem;
+}

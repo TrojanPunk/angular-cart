@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="column-container col-lg-9 col-md-12">
+      <h1>Products</h1>
+      <div class="d-flex flex-wrap products-container">
+        <app-cards *ngFor="let book of books; index as i" [bookDetails]="book"
+          (addProduct)="insertProduct($event)"></app-cards>
+      </div>
+    </div>
+
+    <div class="column-container col-lg-3 col-md-12">
+      <h1>Cart</h1>
+      <ol class="list-group list-group-numbered">
+        <app-card-items *ngFor="let item of cartItems" [item]="item" (removeFromCart)="removeItems($event)"
+          (quantityManipulate)="manipulateQuantity()"></app-card-items>
+      </ol>
+      <h1 class="total-amount d-flex flex-column">Total : <span class="amount">${{total.toFixed(2)}}</span></h1>
+    </div>
+  </div>
